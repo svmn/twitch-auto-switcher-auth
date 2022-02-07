@@ -1,0 +1,16 @@
+name = "twitch-auto-switcher-auth-proxy"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+compatibility_date = "2022-02-04"
+
+kv_namespaces = [
+  { binding = "KV_STORAGE", id = "94ac884ad15b4f6ab89ceda497ff1b29", preview_id = "72002e5720a849a9a03aa25dba5977a9" }
+]
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
